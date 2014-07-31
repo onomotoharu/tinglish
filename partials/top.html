@@ -1,0 +1,13 @@
+<div id="japanese">
+{{japanese}} 
+</div>
+
+<div ng-repeat="word in words | limitTo:30">
+  <div id="{{$index}}" class="card" ng-click="tapped(word)" swipe-card>
+    <p class="word">{{word[0]}}</p>
+  </div>
+</div>
+
+<div id="score">
+  正答{{score}}%
+</div>
